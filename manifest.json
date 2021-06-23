@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "musicRec",
+    "version": "1.0.0",
+    "description": "cool music?",
+    "author": "Sahaj0312",
+
+    "browser_action": {
+        "default_title": "musicRec",
+        "default_popup": "popup.html"
+
+    },
+
+    "permissions": ["activeTab"]
+
+}
