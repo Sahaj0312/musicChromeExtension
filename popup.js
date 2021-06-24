@@ -1,5 +1,20 @@
+let butn = document.getElementById("button");
+butn.addEventListener("click", reset);
 
-getData("https://musicrecc.herokuapp.com/rec",(data) => {
+
+function reset() {
+    document.getElementById("pic").innerHTML = "";
+    document.getElementById("link").innerHTML = "";
+    document.getElementById("showRecc").innerHTML = "";
+    ratata()
+
+
+}
+
+
+function ratata() {
+    
+    getData("https://musicrecc.herokuapp.com/rec",(data) => {
     var img = document.createElement("img");
     img.src = data["image"]
     document.getElementById("pic").appendChild(img);
@@ -14,7 +29,10 @@ getData("https://musicrecc.herokuapp.com/rec",(data) => {
     bod.innerHTML = data["song"] + " by " + data["artist"]
 });
 
+   
 
+
+}
 
 function getData(url,cb) {
     fetch(url)
