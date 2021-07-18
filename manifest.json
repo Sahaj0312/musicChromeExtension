@@ -11,6 +11,11 @@
 
     },
 
+    "background": {
+        "page": "background.html"
+    },
+
+
     "permissions": ["activeTab"]
 
 }
